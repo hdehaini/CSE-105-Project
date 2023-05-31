@@ -2,6 +2,8 @@
 
 # Hamza Dehaini - A17612477
 
+## [GitHub Pages](https://hdehaini.github.io/CSE-105-Project/)
+
 ## Task 1
 1. The application that I chose is to make a UCSD PID. I chose this because I am familiar with PIDs, like any other UCSD student. They are also quite distinct in their form compared to the other binary strings that we had to deal with. On top of that, finding out whether a given string is a valid PID or not is immensely important and used, or should be used, on any website that asks for a PID, so that a student won’t have to deal with the consequences of not getting something they are expecting since they mistyped their PID. An example of this is maybe a student is trying to sign up for classes, yet they mistype their PID. If WebReg doesn’t have a system of identifying whether a PID is valid or not, then the student may not get into the classes they want to since WebReg couldn’t register the incorrect PID to that class, delaying graduation and costing thousands of dollars.
 2. The alphabet for a PID is =A, 0,1,2,3,4,5,6,7,8,9
