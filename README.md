@@ -44,7 +44,7 @@ Formal Definition M = (Q, Σ, δ, q0, F)
 
 **M = ({q0,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10}, {A, 0,1,2,3,4,5,6,7,8,9}, δ, q0, {q9})**
 
-![NFA for PID](screenshots\nfa.PNG)
+![NFA for PID](assets\screenshots\nfa.PNG)
 
 ---
 
@@ -54,7 +54,7 @@ Formal Definition M = (Q, Σ, δ, q0, F)
     - If the first and last characters of the string aren’t the same, the function will delete the last element of the string, making it have a shorter codomain.
     - If the first and last characters of the string are the same, the function will add an ‘a’ and a ‘b’ at the end of the string, making it have a longer codomain.
     - If the input string is of length 0, the function will add an ‘a’ to the string, making it have a longer codomain.
-2. ![Turing Machine Diagram](screenshots\turing-machine.PNG)
+2. ![Turing Machine Diagram](assets\screenshots\turing-machine.PNG)
 3. Code:
    [Program](turing-machine.py)
     ```
