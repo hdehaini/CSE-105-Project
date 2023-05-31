@@ -13,6 +13,35 @@
     - An example of a string not in this set is A12213A55654A. I chose this example because it has multiple ‘A’s and more than 9 characters in total, guaranteeing that this string is not a valid PID.
 5. This language is a regular language. I can prove this by making an NFA for the language:
 This NFA basically makes sure the string starts with an A and then only goes to the next state if the next character is a digit from 0-9. It does this eight times and accepts the eighth time. If the string is longer than nine characters, it goes to a dead-end state that doesn’t accept the string.
+
+Formal Definition M = (Q, Σ, δ, q0, F)
+
+**Q** = {q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10}
+
+**Σ** = {A, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+**δ** = 
+
+| A   | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| q0  | q1  | -   | -   | -   | -   | -   | -   | -   | -   | -   |
+| q1  | -   | q2  | q2  | q2  | q2  | q2  | q2  | q2  | q2  | q2  |
+| q2  | -   | q3  | q3  | q3  | q3  | q3  | q3  | q3  | q3  | q3  |
+| q3  | -   | q4  | q4  | q4  | q4  | q4  | q4  | q4  | q4  | q4  |
+| q4  | -   | q5  | q5  | q5  | q5  | q5  | q5  | q5  | q5  | q5  |
+| q5  | -   | q6  | q6  | q6  | q6  | q6  | q6  | q6  | q6  | q6  |
+| q6  | -   | q7  | q7  | q7  | q7  | q7  | q7  | q7  | q7  | q7  |
+| q7  | -   | q8  | q8  | q8  | q8  | q8  | q8  | q8  | q8  | q8  |
+| q8  | -   | q9  | q9  | q9  | q9  | q9  | q9  | q9  | q9  | q9  |
+| q9  | -   | q10 | q10 | q10 | q10 | q10 | q10 | q10 | q10 | q10 |
+| q10 | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | - | - |
+
+**q0** = q0 is the starting state
+
+**F** = {q9} is the set of accept states
+
+**M = ({q0,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10}, {A, 0,1,2,3,4,5,6,7,8,9}, δ, q0, {q9})**
+
 ![NFA for PID](screenshots\nfa.PNG)
 
 ---
