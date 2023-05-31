@@ -224,25 +224,25 @@ def turing_machine(input_string):
     return "".join(tape)
 
 
-input_string = "aaabbaaa"
-output_string = turing_machine(input_string)
-# Output: aaabbaaaab
+    input_string = "aaabbaaa"
+    output_string = turing_machine(input_string)
+    # Output: aaabbaaaab
 
-input_string = "abb"
-output_string = turing_machine(input_string)
-# Output: ab
+    input_string = "abb"
+    output_string = turing_machine(input_string)
+    # Output: ab
 
-input_string = "bba"
-output_string = turing_machine(input_string)
-# Output: bb
+    input_string = "bba"
+    output_string = turing_machine(input_string)
+    # Output: bb
 
-input_string = "bb"
-output_string = turing_machine(input_string)
-# Output: bbab
+    input_string = "bb"
+    output_string = turing_machine(input_string)
+    # Output: bbab
 
-input_string = ""
-output_string = turing_machine(input_string)
-# Output: a
+    input_string = ""
+    output_string = turing_machine(input_string)
+    # Output: a
 
 
 class TuringMachineTestCase(unittest.TestCase):
@@ -277,8 +277,8 @@ class TuringMachineTestCase(unittest.TestCase):
         self.assertEqual(output_string, expected_output)
 
 
-if __name__ == '__main__':
-    unittest.main()
+    if __name__ == '__main__':
+        unittest.main()
 
 ```
 
