@@ -25,24 +25,26 @@ This NFA basically makes sure the string starts with an A and then only goes to 
     - If the input string is of length 0, the function will add an ‘a’ to the string, making it have a longer codomain.
 2. ![Turing Machine Diagram](screenshots\turing-machine.PNG)
 3. Code: [Program](turing-machine.py)
+   
 ```
-    import unittest
+
+import unittest
 
 
-    def print_tape(full_tape, current_index, written_char, current_state, future_state, direction):
-        for char in full_tape:
-            print(char + ", ", end="")
-        print("...")
-        print(" " * (current_index * 3) + '\u2191')
-        print("Current State: " + current_state)
-        print("Current Tape Head to be Read: " + str(full_tape[current_index]))
-        print("Current Tape Head to be Written: " + written_char)
-        print("Tape Head Transition: " + direction)
-        print("Next State: " + future_state)
-        print("\n")
+def print_tape(full_tape, current_index, written_char, current_state, future_state, direction):
+    for char in full_tape:
+        print(char + ", ", end="")
+    print("...")
+    print(" " * (current_index * 3) + '\u2191')
+    print("Current State: " + current_state)
+    print("Current Tape Head to be Read: " + str(full_tape[current_index]))
+    print("Current Tape Head to be Written: " + written_char)
+    print("Tape Head Transition: " + direction)
+    print("Next State: " + future_state)
+    print("\n")
 
 
-    def turing_machine(input_string):
+def turing_machine(input_string):
     tape = list(input_string + "_" + "_" + "_")
     curr = 0
     write = ""
@@ -224,28 +226,28 @@ This NFA basically makes sure the string starts with an A and then only goes to 
     return "".join(tape)
 
 
-    input_string = "aaabbaaa"
-    output_string = turing_machine(input_string)
-    # Output: aaabbaaaab
+input_string = "aaabbaaa"
+output_string = turing_machine(input_string)
+# Output: aaabbaaaab
 
-    input_string = "abb"
-    output_string = turing_machine(input_string)
-    # Output: ab
+input_string = "abb"
+output_string = turing_machine(input_string)
+# Output: ab
 
-    input_string = "bba"
-    output_string = turing_machine(input_string)
-    # Output: bb
+input_string = "bba"
+output_string = turing_machine(input_string)
+# Output: bb
 
-    input_string = "bb"
-    output_string = turing_machine(input_string)
-    # Output: bbab
+input_string = "bb"
+output_string = turing_machine(input_string)
+# Output: bbab
 
-    input_string = ""
-    output_string = turing_machine(input_string)
-    # Output: a
+input_string = ""
+output_string = turing_machine(input_string)
+# Output: a
 
 
-    class TuringMachineTestCase(unittest.TestCase):
+class TuringMachineTestCase(unittest.TestCase):
     def test_turing_machine_aaabbaaa(self):
         input_string = "aaabbaaa"
         expected_output = "aaabbaaaab"
@@ -277,8 +279,8 @@ This NFA basically makes sure the string starts with an A and then only goes to 
         self.assertEqual(output_string, expected_output)
 
 
-    if __name__ == '__main__':
-        unittest.main()
+if __name__ == '__main__':
+    unittest.main()
 
 ```
 
