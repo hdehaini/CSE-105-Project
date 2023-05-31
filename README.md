@@ -34,7 +34,7 @@ Formal Definition M = (Q, Σ, δ, q0, F)
 | q7  | -   | q8  | q8  | q8  | q8  | q8  | q8  | q8  | q8  | q8  |
 | q8  | -   | q9  | q9  | q9  | q9  | q9  | q9  | q9  | q9  | q9  |
 | q9  | -   | q10 | q10 | q10 | q10 | q10 | q10 | q10 | q10 | q10 |
-| q10 | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | - | - |
+| q10 | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   |
 
 **q0** = q0 is the starting state
 
