@@ -25,7 +25,7 @@ This NFA basically makes sure the string starts with an A and then only goes to 
     - If the input string is of length 0, the function will add an ‘a’ to the string, making it have a longer codomain.
 2. ![Turing Machine Diagram](screenshots\turing-machine.PNG)
 3. Code: [Program](turing-machine.py)
-   
+
 ```
 
 import unittest
@@ -283,10 +283,10 @@ if __name__ == '__main__':
     unittest.main()
 
 ```
-
 4. 
 
 ```
+
 a, a, a, b, b, a, a, a, _, _, _, ...
 ↑
 Current State: q0
@@ -404,8 +404,11 @@ The final output tape: a, a, a, b, b, a, a, a, a, b, _, ...
 
 
 ____________________________________________________________________________________________________
+
 ```
+
 ```
+
 b, b, _, _, _, ...
 ↑
 Current State: q0
@@ -469,8 +472,11 @@ The final output tape: b, b, a, b, _, ...
 
 
 ____________________________________________________________________________________________________
+
 ```
+
 ```
+
 ._, _, _, ...
 ↑
 Current State: q0
